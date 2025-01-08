@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", serif;
+}
+
+body {
+    max-width: 1440px;
+   
+}
+
+.container {
+    width: 578px;
+    margin: 10% auto;
+    display: grid;
+    grid-template-areas: 'result summary';
+    
+}
+
+.result {
+    grid-area: result;
+    text-align: center;
+    color: white;
+    background-color: hsl(241, 81%, 54%);
+    width: 300px;
+    padding: 5%;
+    border-radius: 20px;
+    z-index: 1;
+}
+.result h3 {
+    color: hsl(241, 100%, 89%);
+}
+
+.result .number {
+    width: 50%;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10%;
+    background-color: hsla(256, 72%, 46%, 1);
+    box-shadow: 5px 10px hsla(241, 72%, 46%, 0);
+}
+
+.result .number .x {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.result .number .y {
+    color: hsl(241, 100%, 89%);
+    
+}
+
+.result p {
+    font-size: 18px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.summary {
+    grid-area: summary;
+    background-color: hsl(221, 100%, 96%);
+    width: 278px;
+    padding-left: 15%;
+    padding-top: 5%;
+    position: relative;
+    right: 12px;
+    z-index: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary li {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+.summary ul li span {
+    color: black;
+}
+
+
+.summary ul li span b {
+    color: black;
+
+}
+
+.summary .reaction {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(0, 80%, 84%);
+    color: red;
+    position: relative;
+    
+    
+}
+
+.summary .memory {
+    
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(39, 95%, 78%);
+    color: orange;
+    
+}
+
+.summary .verbal {
+    
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(166, 65%, 78%);
+    color: green;
+    
+}
+
+.summary .visual {
+    
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: hsl(235, 31%, 73%);
+    color: blueviolet;
+    
+}
+
+.summary button {
+    padding: 5%;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 20px;
+}
+
+.summary button:hover {
+    background-color: blue;
+}
+
+@media screen and ( max-width: 528px) {
+    
+    .container {
+        width: 578px;
+        margin: 0%;
+        display: grid;
+        grid-template-areas: 'result' 
+        'summary';
+        
+    }
+    
+    .result {
+        grid-area: result;
+        width: 350px;
+        padding: 0%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        z-index: 1;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .result h3 {
+        color: hsl(241, 100%, 89%);
+    }
+    
+    .result .number {
+        padding: 15%;
+    }
+    
+  
+    
+    .result p {
+        font-size: 18px;
+        width: 290px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .summary {
+        grid-area: summary;
+
+        width: 350px;
+        padding-left: 3%;
+        position: relative;
+        right: 0;
+        bottom: 10px;
+        z-index: 0;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    }
+    
+    .summary ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .summary li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .summary ul li span {
+        color: black;
+    }
+    
+    .summer ul li i {
+        border: 1px solid black;
+    }
+    
+    .summary ul li span b {
+        color: black;
+    
+    }
+    
+    .summary .reaction {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: hsl(0, 80%, 84%);
+        color: red;
+        
+        
+    }
+    
+    .summary .memory {
+        
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: hsl(39, 95%, 78%);
+        color: orange;
+        
+    }
+    
+    .summary .verbal {
+        
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: hsl(166, 65%, 78%);
+        color: green;
+        
+    }
+    
+    .summary .visual {
+        
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: hsl(235, 31%, 73%);
+        color: blueviolet;
+        
+    }
+    
+    .summary button {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+   
+}
